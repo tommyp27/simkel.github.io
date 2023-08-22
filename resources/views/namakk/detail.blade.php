@@ -44,9 +44,11 @@
 
                                 <div class="col-md-3">
                                     <div class="mb-3">
-                                        <label for="" class="form-label">Nama</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1"
-                                            placeholder="name@example.com">
+                                        <label for="penduduk_id">Nama Penduduk</label>
+                                        <select class="form-control" name="penduduk_id" required>
+                                            <option value="">--Pilih--</option>
+
+                                        </select>
                                     </div>
                                 </div>
 
@@ -54,7 +56,7 @@
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Hubungan Keluarga</label>
                                         <input type="text" class="form-control" id="exampleFormControlInput1"
-                                            placeholder="name@example.com">
+                                            placeholder="Hubungan dengan kepala keluarga">
                                     </div>
                                 </div>
                                 <div class="col-md">
@@ -64,12 +66,42 @@
                                                 class="btn btn-primary">Tambah</a>
                                         </div>
                                     </div>
+
                                 </div>
+
                             </div>
                         </div>
                     </div>
 
                 </div>
+
+                <h2 class="p-2">Anggota Keluarga</h2>
+
+                <table class="table table-hover text-nowrap" id="myTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nama</th>
+                            <th>Hubungan Keluarga</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Andin</td>
+                            <td>anak</td>
+
+                            <td>
+                                <a href="#" class="btn btn-warning">Edit</a>
+                                <a href="#" class="btn btn-danger">Delete</a>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
 
             </div>
 
